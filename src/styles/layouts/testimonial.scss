@@ -1,0 +1,67 @@
+.testimonial {
+  margin: 0 auto;
+  padding: 15rem 0;
+  max-width: 125rem;
+
+  @media screen and (max-width: 26.6em) {
+    padding: 6.5rem 2rem;
+    max-width: 100%;
+  }
+
+  h4 {
+    font-size: 2.3rem;
+    margin-bottom: 8rem;
+  }
+
+  &__grid {
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: 26.6em) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding: 2.5rem;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 26.6em) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    figure {
+      width: 7rem;
+      height: 7rem;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-bottom: 6rem;
+    }
+
+    p {
+      flex: 1;
+      line-height: 1.8em;
+      text-align: center;
+      margin-bottom: 6rem;
+      color: var(--color-darkGrayish-blue-2xl);
+    }
+
+    h5 {
+      font-weight: 900;
+      margin-bottom: 0.8rem;
+      font-family: var(--font-family-secondary);
+      color: var(--color-dark-blue-neutral);
+    }
+
+    span {
+      font-size: 1.45rem;
+      color: var(--color-grayish-blue-neutral);
+    }
+  }
+}

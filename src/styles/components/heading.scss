@@ -1,0 +1,73 @@
+.heading {
+  font-weight: 900;
+  color: var(--color-white);
+  font-family: var(--font-family-secondary);
+
+  &--center {
+    text-align: center;
+  }
+
+  &--spaced {
+    letter-spacing: 0.17em;
+  }
+
+  &--lg {
+    font-size: 5.8rem;
+
+    @media screen and (max-width: 64em) {
+      font-size: 5.1rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: 26.6em) {
+      font-size: 4.1rem;
+    }
+
+    @media screen and (max-width: 20em) {
+      font-size: 3.4rem;
+    }
+  }
+
+  &--md {
+    font-size: 4.25rem;
+
+    @media screen and (max-width: 64em) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: 48em) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &--sm {
+    font-size: 2.9rem;
+
+    @media screen and (max-width: 64em) {
+      font-size: 2.7rem;
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--white {
+    color: var(--color-white);
+  }
+
+  &--black {
+    color: var(--color-dark-blue-neutral);
+  }
+
+  &--cyan {
+    color: var(--color-dark-cyan-primary);
+  }
+
+  &--gray {
+    color: var(--color-grayish-blue-neutral);
+  }
+}

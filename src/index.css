@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+:root {
+  --color-soft-red-primary: hsl(7, 99%, 70%);
+  --color-yellow-primary: hsl(51, 100%, 49%);
+  --color-dark-cyan-primary: hsl(167, 40%, 24%);
+  --color-dark-blue-primary: hsl(198, 62%, 26%);
+  --color-dark-cyan-light-primary: hsl(168, 34%, 41%);
+
+  --color-dark-blue-neutral: hsl(212, 27%, 19%);
+  --color-darkGrayish-blue-2xl: hsl(213, 9%, 39%);
+  --color-darkGrayish-blue-neutral: hsl(232, 10%, 55%);
+  --color-grayish-blue-neutral: hsl(210, 4%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --font-family-primary: "Barlow", sans-serif;
+  --font-family-secondary: "Fraunces", sans-serif;
+
+  --color-footer-bg: hsl(167, 48%, 74%);
+
+  --border-color-accent-1: 51, 100%, 49%;
+  --border-color-accent-2: 7, 99%, 70%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%; /** 1rem = 10px **/
+}
+
+body {
+  font-weight: 600;
+  font-size: 1.8rem;
+  box-sizing: border-box;
+  font-family: var(--font-family-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 64em) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 26.6em) {
+  body {
+    /* font-size: 1.5rem; */
+  }
+}

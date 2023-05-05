@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 8rem 0 4rem;
+  flex-direction: column;
+  background-color: var(--color-footer-bg);
+
+  svg {
+    margin-bottom: 4rem;
+    transform: scale(1.3);
+    fill: var(--color-dark-cyan-primary);
+
+    @media screen and (max-width: 48em) {
+      transform: scale(1);
+    }
+  }
+
+  &__list {
+    gap: 5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7rem;
+    list-style-type: none;
+  }
+
+  &__item {
+    color: var(--color-dark-cyan-light-primary);
+  }
+
+  &__socials {
+    gap: 2.7rem;
+    display: flex;
+    align-items: center;
+
+    button {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

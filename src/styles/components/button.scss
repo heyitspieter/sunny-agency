@@ -1,0 +1,57 @@
+.btn {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 1.32em 2.4em;
+  text-transform: uppercase;
+  font-family: var(--font-family-secondary);
+
+  @media screen and (max-width: 64em) {
+    font-size: 1.23rem;
+  }
+
+  &--rounded {
+    border-radius: 5em;
+  }
+
+  &--white {
+    background-color: var(--color-white);
+  }
+
+  &--yellow {
+    background-color: var(--color-yellow-primary);
+  }
+
+  &--wght-900 {
+    font-weight: 900;
+  }
+
+  &--outline {
+    text-align: left;
+    padding: 0 0.5em;
+    position: relative;
+
+    @media screen and (max-width: 26.6em) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &--border-accent-1::after,
+  &--border-accent-2::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    content: " ";
+    height: 0.6rem;
+    bottom: -0.2rem;
+    border-radius: 0.5rem;
+  }
+
+  &--border-accent-1::after {
+    background-color: hsl(var(--border-color-accent-1), 0.32);
+  }
+
+  &--border-accent-2::after {
+    background-color: hsl(var(--border-color-accent-2), 0.32);
+  }
+}

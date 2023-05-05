@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  background-size: cover;
+  padding: 2em 3em 35em 3em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/desktop/image-header.jpg");
+
+  @media screen and (max-width: 26.6em) {
+    padding: 2em 2em 35em 2em;
+  }
+
+  &__arrow {
+    top: 52%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+}
